@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+     <p>New Friends</p>
+     <% for (let i=0;i<(books_items.length)+2;i++){ %>
+       <div class="t1">
+         <h1><%= books_items[i] %></h1>
+         <form class="" method="post">
+           <button type="Submit" formaction= "/chat" value="<%= books_items[i] %>" name="btn1">CHAT</button>
+           <button type="Submit" formaction= "/block" value="<%= books_items[i] %>" name="btn2">Block</button>
+           <hr/>
+         </form>
+        </div>
+     <% } %>
+  </body>
+</html>
